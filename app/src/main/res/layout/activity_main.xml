@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:text="De"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <RadioGroup
+        android:id="@+id/radio1"
+        android:layout_width="158dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toStartOf="@+id/radio2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="USD" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="BRL" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="EUR" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="BTC" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="ETH" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:layout_width="158dp"
+        android:layout_height="264dp"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.495">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="USD" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="BRL" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="EUR" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="BTC" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="158dp"
+            android:layout_height="54dp"
+            android:text="ETH" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convertValues"
+        android:text="Converter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
